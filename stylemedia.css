@@ -1,0 +1,104 @@
+@media screen and (min-width: 100px) and (max-width:550px) {
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main{
+        width: 80%;
+        height: 70%; 
+        background-color: blueviolet;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        box-shadow: 1px 1px 5px 1px;
+    }
+    
+    #buttons {
+        width: 270px;
+        height: 90%;
+        display: grid;
+        gap: 5px; 
+        margin: auto;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        
+    }
+    
+    #multiply_input, #one_input, #two_input, #three_input, #four_input, #five_input, #six_input, #seven_input, #eight_input, #nine_input, #zero_input, #dot_input, #sum_input, #minus_input, #divide_input, #clean_input, #equal_input,#porcent_input, #erase_input{
+        padding: 5px;
+        background-color: rgb(28, 9, 65);
+        border-radius: 10px;
+        font-weight: bolder;
+        font-size: 30px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: black  1px 3px 3px;
+    }
+    
+    #screen_div{
+        
+        background-color: white;
+        border-radius: 10px;
+        font-weight: bolder;
+        font-size: 30px;
+        color: black;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        grid-column: 1 / 5;
+        grid-row: 1/ 1; 
+        padding: 5px;
+        height: 60px;
+        
+    }
+    
+    
+    #equal_input {
+        grid-column: 4 / 4;
+        grid-row: 5/ 7; 
+    }
+    #sum_input{
+        grid-column: 4 / 4;
+        grid-row: 3 / 3; 
+    }
+    #minus_input {
+        grid-column: 4 / 4;
+        grid-row: 4 / 4; 
+    }
+    #divide_input {
+        grid-column: 4 / 4;
+        grid-row: 2 / 2; 
+    }
+    #multiply_input{
+        grid-column: 3 / 3;
+        grid-row: 2 / 2; 
+    }
+    #clean_input{
+        grid-column: 1 / 1;
+        grid-row: 2 / 2; 
+    }
+    #porcent_input {
+        grid-column: 2 / 2;
+        grid-row: 2 / 2; 
+    }
+    #zero_input {
+        grid-column: 1 / 2;
+        grid-row: 6 / 6; 
+    }
+    #one_input {
+        grid-column: 1 / 1;
+        grid-row: 3 / 3; 
+    }
+}
