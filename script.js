@@ -87,7 +87,8 @@ let calc = () => {
    if(result === ' '){
     screen.innerHTML = 'Digite algo'
    } else{
-    screen.innerHTML = eval(result);
+     let result1 = eval(result);
+     screen.innerHTML = result1.toFixed(2);
    }
 }
 
