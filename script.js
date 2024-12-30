@@ -41,12 +41,17 @@ dot.addEventListener('click', function(){insert('.');})
 //--------------inserir na tela---------------
 function insert(num){
     let numeroTela = document.getElementById('screen_div').innerHTML;
-    if(numeroTela === 'Digite algo'){
-        screen.innerHTML= '';
+    
+    if(numeroTela.length > 10){
+        
     } else {
-        screen.innerHTML = numeroTela + num;
+        if(numeroTela === 'Digite algo'){
+            screen.innerHTML= '';
+        } else {
+            screen.innerHTML = numeroTela + num;
+        }
     }
-   
+  
 }
 equal.addEventListener('click', function(){
     result();
